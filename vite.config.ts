@@ -11,12 +11,12 @@ export default ({ mode }: { mode: string }) => {
       }
     },
     define: { 'process.env': { ...loadEnv(mode, process.cwd()) } },
-    server: {
-      proxy: {
-        '^/assets': {
-          target: 'http://localhost:3000/'
-        }
-      }
-    }
+    // server: {
+    //   proxy: {
+    //     '^/assets': {
+    //       target: 'http://localhost:3000/'
+    //     }
+    //   }
+    // }
   });
 };

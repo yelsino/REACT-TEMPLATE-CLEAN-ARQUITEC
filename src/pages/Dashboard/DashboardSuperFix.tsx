@@ -1,6 +1,5 @@
 import { useAsync, useFetchAndLoad } from '@/hooks';
 import { getCoolMorty, getCoolRick } from '@/services/public.service';
-import { LayoutContainer } from '@/styled-components';
 import { useState } from 'react';
 
 const Component1 = () => {
@@ -45,13 +44,13 @@ export const DashboardSuperFix = () => {
   }
 
   return (
-    <LayoutContainer>
+    <div>
       <div style={{ fontSize: '3rem' }}>
         <div>Buenas buenas mi gente !</div>
        
         <div role="tabpanel"> {value === 0 ? <Component1 /> : <Component2 />}</div>
       </div>
-    </LayoutContainer>
+    </div>
   );
 };
 
